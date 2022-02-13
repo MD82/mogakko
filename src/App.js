@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -19,16 +20,15 @@ function App() {
     setNumber(0);
   }
 
-
-    return (
-        <div>
-            <div>값 : {number}</div>
-            <button onClick={onClickInit}>0</button>
-            <button onClick={onClickPlus}>+1</button>
-            <button onClick={onClickMinus}>-1</button>
-            <button onClick={onClickMultiply}>*2</button>
-        </div>
-    );
+  return (
+      <div>
+          <div>값 : {number}</div>
+          <Button onClick={onClickInit} text="0" />
+          <Button onClick={onClickPlus} text="+1" />
+          <Button onClick={onClickMinus} text="-1" />
+          <Button onClick={onClickMultiply} text="*2" />
+      </div>
+  );
 }
 
 export default App;
