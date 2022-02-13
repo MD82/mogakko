@@ -1,5 +1,7 @@
+import styles from './Header.module.css'
+
 function Header() {
-  return <div style={{fontSize:'3rem'}}>Travel Diary</div>;
+  return <div className={styles.title}>Travel Diary</div>;
 }
 
 export default Header;
