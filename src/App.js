@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import Layout from './Layout';
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -21,13 +22,13 @@ function App() {
   }
 
   return (
-      <div>
-          <div>값 : {number}</div>
-          <Button onClick={onClickInit} text="0" />
-          <Button onClick={onClickPlus} text="+1" />
-          <Button onClick={onClickMinus} text="-1" />
-          <Button onClick={onClickMultiply} text="*2" />
-      </div>
+    <Layout>
+        <div>값 : {number}</div>
+        <Button onClick={onClickInit} text="0" />
+        <Button onClick={onClickPlus} text="+1" />
+        <Button onClick={onClickMinus} text="-1" />
+        <Button onClick={onClickMultiply} text="*2" />
+    </Layout>
   );
 }
 
