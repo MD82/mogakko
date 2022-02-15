@@ -1,15 +1,28 @@
-import youtubeData from './data/youtubeData.json';
+import React, { useState } from 'react';
+import Layout from './components/Layout';
 
 function App() {
-  console.log('youtubeData : ', youtubeData);
-  console.log('youtubeData[data]', youtubeData['data']);
-  console.log('youtubeData[data][0]', youtubeData['data'][0]);
-  console.log('id : ', youtubeData['data'][0].id, ' -> 영상의 링크 주소');
-  console.log('title : ', youtubeData['data'][0].title, ' -> 영상 제목');
-  console.log('viewCount : ', youtubeData['data'][0].viewCount, ' -> 조회수');
+  const [chkVal, setChk] = useState(true);
 
-  return <div>리액트로 데이터 불러오기</div>;
+  function onTrueClick() {
+    console.log("true")
+    setChk(true);
+  }
   
+  function onFalseClick() {
+    console.log("false")
+    setChk(false);
+  }
+
+  return (
+    <Layout>
+      <div>
+        {true === chkVal && <div>True일 때 출력되는 메세지</div>}
+        {false === chkVal && <div>False일 때 출력되는 메세지</div>}
+        <button onClick={onTrueClick}>True</button><button onClick={onFalseClick}>False</button>
+      </div>
+    </Layout>
+  );
 }
 
 export default App;
