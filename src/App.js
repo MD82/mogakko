@@ -23,7 +23,16 @@ function App() {
 
   return (
     <Layout>
-        <div>값 : {number}</div>
+        <div>{number} * 1 = {number * 1}</div>
+        <div>{number} * 2 = {number * 2}</div>
+        <div>{number} * 3 = {number * 3}</div>
+        <div>{number} * 4 = {number * 4}</div>
+        <div>{number} * 5 = {number * 5}</div>
+        <div>{number} * 6 = {number * 6}</div>
+        <div>{number} * 7 = {number * 7}</div>
+        <div>{number} * 8 = {number * 8}</div>
+        <div>{number} * 9 = {number * 9}</div>
+
         <Button onClick={onClickInit} text="0" />
         <Button onClick={onClickPlus} text="+1" />
         <Button onClick={onClickMinus} text="-1" />
