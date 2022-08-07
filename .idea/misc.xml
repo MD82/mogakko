@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="106" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/Header.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="190" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/App.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="116" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/Content.js" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>
